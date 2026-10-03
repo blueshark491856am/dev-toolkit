@@ -1,37 +1,36 @@
 # dev-toolkit
 
-A small collection of practical command-line helpers I use to speed up everyday development.
+A personal collection of practical command-line utilities for everyday development tasks.
 
 ## Features
 
-- Create clean project workspaces
-- Find large or forgotten files
-- Check common development dependencies
-- Clean generated build artifacts
-- Summarize Git repository status
-- Works on macOS and Linux
+- Project setup and cleanup helpers
+- Git workflow shortcuts
+- Code search and file utilities
+- Local development diagnostics
+- Small, composable shell commands
 
 ## Install
 
 ```bash
-git clone https://github.com/your-username/dev-toolkit.git
+git clone https://github.com/YOUR_USERNAME/dev-toolkit.git
 cd dev-toolkit
-./install.sh
+chmod +x bin/*
+export PATH="$PWD/bin:$PATH"
 ```
 
-Make sure the installation directory is included in your `PATH`.
+Add the `PATH` export to your shell profile to make the tools available in new sessions.
 
 ## Usage
 
+List the available commands:
+
 ```bash
-dev-toolkit help
-dev-toolkit doctor
-dev-toolkit git-summary
-dev-toolkit clean
+dev-toolkit --help
 ```
 
-Run `dev-toolkit help` to see all commands and options.
+Run a command:
 
-## License
-
-MIT
+```bash
+dev-toolkit <command> [options]
+```
