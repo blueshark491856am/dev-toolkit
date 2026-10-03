@@ -1,36 +1,23 @@
 # dev-toolkit
 
-A personal collection of practical command-line utilities for everyday development tasks.
+A small collection of Python utilities for everyday development tasks.
 
 ## Features
 
-- Project setup and cleanup helpers
-- Git workflow shortcuts
-- Code search and file utilities
-- Local development diagnostics
-- Small, composable shell commands
+- Clean, dependency-free helpers
+- Type hints and docstrings
+- Simple command line entry points
+- Works on Python 3.9+
 
 ## Install
 
-```bash
-git clone https://github.com/YOUR_USERNAME/dev-toolkit.git
-cd dev-toolkit
-chmod +x bin/*
-export PATH="$PWD/bin:$PATH"
-```
-
-Add the `PATH` export to your shell profile to make the tools available in new sessions.
+    pip install -r requirements.txt
 
 ## Usage
 
-List the available commands:
+    from utils import slugify, chunk
+    print(slugify('Hello World'))
 
-```bash
-dev-toolkit --help
-```
+## License
 
-Run a command:
-
-```bash
-dev-toolkit <command> [options]
-```
+MIT
